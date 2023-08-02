@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::group(['middleware' => ['auth'], 'prefix' => 'dashboard'], function () {
+Route::group(['middleware' => 'authUser', 'prefix' => 'dashboard'], function () {
 
     Route::get('log', [LogController::class, 'index'])->name('logList');
     Route::get('log/{logId}', [LogController::class, 'show'])->name('logDetail');
