@@ -42,7 +42,7 @@
                                 @foreach($logs as $log)
                                     <tr>
                                         <td class="ps-4">
-                                            <p class="text-xs font-weight-bold mb-0">{{ $log->error_code }}</p>
+                                            <p class="text-xs font-weight-bold mb-0">{{ $log->id }}</p>
                                         </td>
                                         <td>
                                             <p class="text-xs font-weight-bold mb-0">{{ $log->user_id }}</p>

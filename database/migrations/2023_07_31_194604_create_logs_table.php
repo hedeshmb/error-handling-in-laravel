@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('logs', function (Blueprint $table) {
             $table->id();
-            $table->integer('error_code')->default(1);
             $table->unsignedBigInteger('user_id');
             $table->text('error_content');
             $table->string('action');
